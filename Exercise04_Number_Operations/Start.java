@@ -29,9 +29,9 @@ public class Start {
         // Write your code here
         int number = 5;
         System.out.println(number);
-        number = +1;
+        number +=1;
         System.out.println(number);
-        number = -1;
+        number -=1;
         System.out.println(number);
     }
 
