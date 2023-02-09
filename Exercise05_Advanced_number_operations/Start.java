@@ -36,8 +36,8 @@ public class Start {
         System.out.println("\nExercise 2:");
         int valueA = 5;
         int valueB = 10;
-int MaxValue = Math.max(valueA,valueB);
-int MinValue = Math.min(valueA,valueB);
+         int MaxValue = Math.max(valueA,valueB);
+         int MinValue = Math.min(valueA,valueB);
         System.out.println("Max="+ MaxValue);
         System.out.println("Min=" + MinValue);
 

@@ -27,7 +27,8 @@ public class Start {
     private static void exercise1() {
         System.out.println("Exercise 1:");
         // Write your code here
-        int number;
+        int number = 5;
+        System.out.println(number);
         number = +1;
         System.out.println(number);
         number = -1;
@@ -43,7 +44,8 @@ public class Start {
     private static void exercise2() {
         System.out.println("\nExercise 2:");
         double n = 3;
-        System.out.println(n * 2);
+        n= n*2;
+        System.out.println(n);
         double na = n/2;
         System.out.println(na);
         // Write your code here
@@ -123,7 +125,7 @@ public class Start {
     private static void playAroundWithModulus() {
         System.out.println("\nModulus testing!:");
 
-        int value = 8;   // <--- change this value
+        int value = 7;   // <--- change this value
         int modulus = 4; // <--- and this value to see the results of modulus
 
         System.out.println("Modulus calculation, " + value + " % " + modulus +
