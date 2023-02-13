@@ -32,30 +32,25 @@ public class Start {
         double yourScore = 0;
         // Exercise11_Recap_Challenges.Start your code here
 
-                if(text.length() >20 )
-                {yourScore = 20;}
-                else
-                {yourScore = text.length();}
-                if (text == text.toLowerCase())
-                {yourScore=yourScore + 10;}
-                if (text.contains("a"))
-                {yourScore = yourScore-5;}
-                if (yourScore >= 20)
-                {yourScore = yourScore * 2;}
+        if(text.length() > 20 ) {
+            yourScore = 20;
+        }
+        else {
+            yourScore = text.length();
+        }
 
+        if (text.equals(text.toLowerCase())) {
+            yourScore = yourScore + 10;
+        }
 
+        if (text.contains("a")) {
+            yourScore = yourScore - 5;
+        }
 
-        /*String score = "ralzik ikar esteban";
-        if(score.length() >20 )
-        {yourScore = 20;}
-        else
-        {yourScore = score.length();}
-        if (score == score.toLowerCase())
-        {yourScore=yourScore + 10;}
-        if (score.contains("a"))
-        {yourScore = yourScore-5;}
-        if (yourScore >= 20)
-        {yourScore = yourScore * 2;}*/
+        if (yourScore >= 20) {
+            yourScore = yourScore * 2;
+        }
+
         // End it here
 
         System.out.print("Expected score=" + expectedScore +", actual score=" + yourScore);
