@@ -29,14 +29,18 @@ public class Start {
         double isWarmTemperatureInCelsius = 20;
         boolean isWarm = temperatureInCelsius >= isWarmTemperatureInCelsius;
         boolean wearingShorts = true;
-        if (isWarm == wearingShorts)
-        {
-            System.out.println("Comfortable clothes");
-        }
+
+        if ((isWarm && wearingShorts) || (!isWarm && !wearingShorts))
+
+        {System.out.println("Comfortable clothes");}
         else
-        {
-            System.out.println("Uncomfortable clothes");
-        }
+        {System.out.println("Uncomfortable clothes");}
+        /*
+        if (isWarm ^ wearingShorts)
+        {System.out.println("Uncomfortable clothes");}
+        else
+        {System.out.println("Comfortable clothes");}
+        */
 
         // Write your code here
     }
@@ -53,17 +57,20 @@ public class Start {
     private static void exercise2() {
         System.out.println("\nExercise 2 - Club Bouncer:");
         String shoeType = "fancy";
-        int age = 21;
+        int age = 30;
         double eurosInPocket = 15;
         double eurosForEntry = 10;
-        if (shoeType == "fancy" && age >=18 && eurosInPocket >= eurosForEntry)
+        if (shoeType.equals("fancy"))
+
         {
-            System.out.println("Come in");
+            if (age >= 18 && eurosInPocket >= eurosForEntry)
+              {System.out.println("Come in");}
+            else
+              {System.out.println("stay out");}
         }
+
         else
-        {
-            System.out.println("stay out");
-        }
+            {System.out.println("stay out");}
 
         // Write your code here
     }
@@ -86,19 +93,12 @@ public class Start {
         System.out.println("\nExercise 3 - Test Grader:");
         double ourTestScore = 8;
         double maxTestScore = 10;
-        boolean isTestRetry = !true;
+        boolean isTestRetry = true;
         //Write your code here
-        if (isTestRetry)
-         {
-            if (ourTestScore * maxTestScore >= 70)
-            {System.out.println("C");}
+        if (isTestRetry && ourTestScore * maxTestScore >=70)
 
-            else if (ourTestScore * maxTestScore == 60)
-            {System.out.println("D");}
+        {System.out.println("C");}
 
-            else if (ourTestScore * maxTestScore < 60)
-            {System.out.println("F");}
-         }
         else
          {   if (ourTestScore * maxTestScore == 90)
                 {System.out.println("A");}

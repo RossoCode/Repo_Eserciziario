@@ -31,11 +31,7 @@ public class Start {
     public static double exercise1(String text, double expectedScore) {
         double yourScore = 0;
         // Exercise11_Recap_Challenges.Start your code here
-        switch (text)
-        {
-            case "Java runs on over 2 billion devices":
-            case "+31 2 58765446" :
-            case "hello world":
+
                 if(text.length() >20 )
                 {yourScore = 20;}
                 else
@@ -46,8 +42,8 @@ public class Start {
                 {yourScore = yourScore-5;}
                 if (yourScore >= 20)
                 {yourScore = yourScore * 2;}
-                break;
-        }
+
+
 
         /*String score = "ralzik ikar esteban";
         if(score.length() >20 )
