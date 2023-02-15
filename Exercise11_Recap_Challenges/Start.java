@@ -18,7 +18,7 @@ public class Start {
     /**
      * 1: We are going to 'score' strings, given a string you are to calculate its score based on the following factors.
      *
-     *    Exercise11_Recap_Challenges.Exercise12_Arrays_Lists.Start with a base score of the string's length, this is the starting score. Use .length() on a string
+     *    Exercise11_Recap_Challenges.Exercise12_Arrays_Lists.Exercise13_For_loops_for_each_for_i.Exercise14_While_loop_do_while_loop.Start with a base score of the string's length, this is the starting score. Use .length() on a string
      *
      *    The Maximum starting score is 20, if a score is over 20. Set it to 20.
      *
@@ -30,7 +30,7 @@ public class Start {
      */
     public static double exercise1(String text, double expectedScore) {
         double yourScore = 0;
-        // Exercise11_Recap_Challenges.Exercise12_Arrays_Lists.Start your code here
+        // Exercise11_Recap_Challenges.Exercise12_Arrays_Lists.Exercise13_For_loops_for_each_for_i.Exercise14_While_loop_do_while_loop.Start your code here
 
         if(text.length() > 20 ) {
             yourScore = 20;
@@ -74,7 +74,7 @@ public class Start {
      */
     public static double exercise2(String mealType, double weight, double expectedScore) {
         double yourMealScore = 0;
-        // Exercise11_Recap_Challenges.Exercise12_Arrays_Lists.Start your code here
+        // Exercise11_Recap_Challenges.Exercise12_Arrays_Lists.Exercise13_For_loops_for_each_for_i.Exercise14_While_loop_do_while_loop.Start your code here
         switch (mealType)
         {
             case "sandwich":
