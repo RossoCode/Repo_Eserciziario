@@ -68,6 +68,13 @@ public class Start {
         int maxNumber = 0;
 
         // Write code here
+        for (Integer item : items)
+        {
+            minNumber = Math.min(minNumber,item);
+            maxNumber = Math.max(maxNumber,item);
+        }
+        System.out.println(minNumber);
+        System.out.println(maxNumber);
     }
 
     /**
