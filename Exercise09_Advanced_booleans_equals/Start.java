@@ -30,25 +30,23 @@ public class Start {
         boolean isWarm = temperatureInCelsius >= isWarmTemperatureInCelsius;
         boolean wearingShorts = true;
 
-        if ((isWarm && wearingShorts) || (!isWarm && !wearingShorts))
+        // Write your code here
+        if (isWarm ^ wearingShorts)
+        {
+            System.out.println("Uncomfortable clothes");
+        }
+        else
+        {
+            System.out.println("Comfortable clothes");
+        }
+            /* if ((isWarm && wearingShorts) || (!isWarm && !wearingShorts))
         {
             System.out.println("Comfortable clothes");
         }
         else {
             System.out.println("Uncomfortable clothes");
         }
-        /*
-        if (isWarm ^ wearingShorts)
-        {
-        System.out.println("Uncomfortable clothes");
-        }
-        else
-        {
-        System.out.println("Comfortable clothes");
-        }
         */
-
-        // Write your code here
     }
 
     /**
@@ -104,24 +102,25 @@ public class Start {
         double maxTestScore = 10;
         boolean isTestRetry = true;
         //Write your code here
-        if (isTestRetry && ourTestScore * maxTestScore >=70) {
+        double finalTestScore = ourTestScore * maxTestScore;
+        if (isTestRetry && finalTestScore >=70) {
             System.out.println("C");
         }
 
         else {
-             if (ourTestScore * maxTestScore == 90) {
-                    System.out.println("A");}
-             else if (ourTestScore * maxTestScore == 80) {
-                    System.out.println("B");
+             if     (finalTestScore == 90) {
+                        System.out.println("A");}
+             else if (finalTestScore == 80) {
+                        System.out.println("B");
              }
-             else if (ourTestScore * maxTestScore == 70) {
-                    System.out.println("C");
+             else if (finalTestScore == 70) {
+                        System.out.println("C");
              }
-             else if (ourTestScore * maxTestScore == 60) {
-                    System.out.println("D");
+             else if (finalTestScore == 60) {
+                        System.out.println("D");
              }
-             else if (ourTestScore * maxTestScore < 60) {
-                    System.out.println("F");
+             else if (finalTestScore < 60) {
+                        System.out.println("F");
              }
          }
     }

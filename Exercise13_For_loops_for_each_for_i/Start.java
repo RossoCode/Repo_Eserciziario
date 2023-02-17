@@ -68,10 +68,10 @@ public class Start {
         int maxNumber = 0;
 
         // Write code here
-        for (Integer item : items)
+        for (Integer Allitem : items)
         {
-            minNumber = Math.min(minNumber,item);
-            maxNumber = Math.max(maxNumber,item);
+            minNumber = Math.min(minNumber,Allitem);
+            maxNumber = Math.max(maxNumber,Allitem);
         }
         System.out.println(minNumber);
         System.out.println(maxNumber);
@@ -101,12 +101,16 @@ public class Start {
      */
     public static void exercise4() {
         System.out.println("Exercise 4:");
-        int times8table= 0;
+        /* con l'aggiunta della variabile int firstTimeTableMult mi peremette di adattare il codice a qualsiasi
+         * numero intero venga inserito in timeTableMult */
+        int timeTableMult= 5;
         int number = 0;
-        for (int timesTableCurrentValue = 8; timesTableCurrentValue <= 80; timesTableCurrentValue += 8) {
-            times8table= timesTableCurrentValue;
+        int firstTimeTableMult = timeTableMult;
+        for (int timesTableCurrentValue = firstTimeTableMult;
+                 timesTableCurrentValue <= (firstTimeTableMult * 10);
+                 timesTableCurrentValue += firstTimeTableMult) {
             number ++;
-            System.out.println( 8 + " x "+ number +" = " + timesTableCurrentValue);
+            System.out.println( firstTimeTableMult + " x "+ number +" = " + timesTableCurrentValue);
         }
     }
 

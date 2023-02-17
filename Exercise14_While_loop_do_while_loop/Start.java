@@ -21,14 +21,15 @@ public class Start {
         double perYearMultiplier = 1 + (averageReturnFromStockMarketIndexPercentage / 100);
         int yearsPast = 0;
         double interestGainedThisYearEuros = 0;
-
-        while (true) {
+     // while (currentInvestmentValueEuros <= 100000)
+        while (yearsPast <= 5 || currentInvestmentValueEuros <= 15000) {
             System.out.println("Investment value = €" + currentInvestmentValueEuros + " after " + yearsPast++ + " years" +
                     ", interest this year €" + interestGainedThisYearEuros);
             double previousYearsInvestment = currentInvestmentValueEuros;
             currentInvestmentValueEuros = currentInvestmentValueEuros * perYearMultiplier;
             interestGainedThisYearEuros = currentInvestmentValueEuros - previousYearsInvestment;
-        }
+
+      }
     }
 
     /**
@@ -58,6 +59,14 @@ public class Start {
         int maxPoundsToSellPerDay = 1_000;
 
         // Write your while loop here
+        while(remainingPoundsToSell > 0) {
+
+            if(poundToEuroExchangeRate >= 1.15) {
+                remainingPoundsToSell = remainingPoundsToSell - maxPoundsToSellPerDay;
+            }
+                daysToSell ++;
+                poundToEuroExchangeRate = 1 + (Math.random() * 0.2);
+        }
 
         System.out.println("It took " + daysToSell + " to exit that cursed economy");
     }
@@ -70,15 +79,15 @@ public class Start {
      * A Example: fori
      *
      * Q1: A user inputs their actions into an ATM, they can withdraw, deposit, check balance or exit. What loop should we use?
-     * A1:
+     * A1:WHILE
      *
      * Q2: We have a list of 1000 users to send emails to
-     * A2:
+     * A2: FORI
      *
      * Q3: We want to print out the first 80 customer names from our bank database
-     * A3:
+     * A3: FORI
      *
      * Q4: We want to read a file 100 lines at a time, without loading the full file into our program
-     * A4:
+     * A4: WHILE
      */
 }
