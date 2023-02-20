@@ -79,15 +79,15 @@ public class Start {
      * A Example: fori
      *
      * Q1: A user inputs their actions into an ATM, they can withdraw, deposit, check balance or exit. What loop should we use?
-     * A1:WHILE
+     * A1: fori
      *
      * Q2: We have a list of 1000 users to send emails to
-     * A2: FORI
+     * A2: FOR each
      *
      * Q3: We want to print out the first 80 customer names from our bank database
-     * A3: FORI
+     * A3: while
      *
      * Q4: We want to read a file 100 lines at a time, without loading the full file into our program
-     * A4: WHILE
+     * A4: do WHILE
      */
 }

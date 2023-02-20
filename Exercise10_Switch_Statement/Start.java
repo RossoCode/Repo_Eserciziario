@@ -118,7 +118,6 @@ public class Start
             case 17 -> System.out.println(inputNumber + " Questo e' il secondo numero primo piu' grande sotto il 20");
             case 19 -> System.out.println(inputNumber + " Questo e' il più grande numero primo sotto il 20");
             default -> System.out.println("non valido");
-
         }
     }
         // Your switch statement here

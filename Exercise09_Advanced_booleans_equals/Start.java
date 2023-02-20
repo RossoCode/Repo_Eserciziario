@@ -108,15 +108,15 @@ public class Start {
         }
 
         else {
-             if     (finalTestScore == 90) {
+             if     (finalTestScore >= 90) {
                         System.out.println("A");}
-             else if (finalTestScore == 80) {
+             else if (finalTestScore >= 80) {
                         System.out.println("B");
              }
-             else if (finalTestScore == 70) {
+             else if (finalTestScore >= 70) {
                         System.out.println("C");
              }
-             else if (finalTestScore == 60) {
+             else if (finalTestScore >= 60) {
                         System.out.println("D");
              }
              else if (finalTestScore < 60) {
