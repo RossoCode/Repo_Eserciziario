@@ -22,19 +22,27 @@ public class Start {
     private static void exercise1() {
         System.out.println("Exercise 1:");
         // Put this into a function
-           /* double celsius = 30;
-            double fahrenheit = ((celsius * 9) / 5) + 32;
-            String conversionDescription = celsius + " Celsius is " + fahrenheit + " fahrenheit";*/
+        /*
+        double celsius = 30;
+        double fahrenheit = conversiontemp2(celsius);
+        String conversionDescription = celsius + " Celsius is " + fahrenheit + " fahrenheit";
+        System.out.println(conversionDescription);
+        */
         // End
         conversionTemperature();
     }
+        /*
+        private static double conversiontemp2(double value) {
+            return ((value * 9) / 5) + 32;
+        }
+        */
 
-    static void conversionTemperature(){
+    private static String conversionTemperature(){
         double celsius = 30;
         double fahrenheit = ((celsius * 9) / 5) + 32;
         String conversionDescription = celsius + " Celsius is " + fahrenheit + " fahrenheit";
         System.out.println(conversionDescription);
-        return;
+        return conversionDescription;
     }
 
 
@@ -52,7 +60,7 @@ public class Start {
 
         for (String name : names) {
             // Call your function
-            nameControl(name);
+           nameControl(name);
         }
     }
     public static void nameControl(String name) {
