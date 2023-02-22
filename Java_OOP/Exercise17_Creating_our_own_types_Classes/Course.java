@@ -9,6 +9,6 @@ public class Course {
     float qualityRatingOutOf10;
     int courseMonthDuration;
     int courseDailyHours;
-    List<String> studentsName = Arrays.asList();
-    List<Integer> studentsAge = Arrays.asList();
+    List<String> studentsName = Arrays.asList("Alice", "Aragon", "Alex");
+    List<Integer> studentsAge = Arrays.asList(23, 31, 38);
 }

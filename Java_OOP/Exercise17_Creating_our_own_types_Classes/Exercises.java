@@ -53,7 +53,7 @@ public class Exercises {
      * 3: Finally lets edit our .Course class once more,
      *
      *    This time we are going to add another internal variable (field or attribute) called
-     *    students. It's going to be a List<Java_OOP.Exercise17_Creating_our_own_types_Classes.Student> called students
+     *    students. It's going to be a List<Student> called students
      *
      *    Copy the code above and add the students from exercise 2
      *
@@ -74,12 +74,10 @@ public class Exercises {
         course.courseDailyHours = 5;
         System.out.println("the name of course is " + course.courseName);
         System.out.println("the numbers of maxStudents is " + course.maxStudents);
-        System.out.println("The raiting of the course is " + course.qualityRatingOutOf10);
+        System.out.println("The rating of the course is " + course.qualityRatingOutOf10);
         System.out.println("the course duration is " + course.courseMonthDuration + " Month");
         System.out.println("the daily hours are " + course.courseDailyHours);
         System.out.println();
-        course.studentsName = Arrays.asList("Alice", "Aragon", "Alex");
-        course.studentsAge = Arrays.asList(45,23,37);
         for (int i = 0; i <course.studentsName.size() ; i++) {
             System.out.println("name's course student is " + course.studentsName.get(i)
                                 + " and is age is "+ course.studentsAge.get(i));
