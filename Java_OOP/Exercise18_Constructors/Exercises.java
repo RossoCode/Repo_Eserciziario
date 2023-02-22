@@ -26,10 +26,14 @@ public class Exercises {
         List<String> studentNames = Arrays.asList("Alice", "Bob", "Charlie");
         List<Integer> studentAges = Arrays.asList(23, 31, 38);
         List<Student> students = new ArrayList<>();
+        Student student = new Student();
 
         for (int i = 0; i < studentAges.size(); i++) {
             // Write create students
+            student.dataStudent(studentNames.get(i),studentAges.get(i));
+            System.out.println();
         }
+
     }
 
     /**

@@ -77,10 +77,13 @@ public class Exercises {
         System.out.println("The raiting of the course is " + course.qualityRatingOutOf10);
         System.out.println("the course duration is " + course.courseMonthDuration + " Month");
         System.out.println("the daily hours are " + course.courseDailyHours);
+        System.out.println();
         course.studentsName = Arrays.asList("Alice", "Aragon", "Alex");
         course.studentsAge = Arrays.asList(45,23,37);
-        System.out.println(course.studentsName);
-        System.out.println(course.studentsAge);
+        for (int i = 0; i <course.studentsName.size() ; i++) {
+            System.out.println("name's course student is " + course.studentsName.get(i)
+                                + " and is age is "+ course.studentsAge.get(i));
+        }
         for (int i = 0; i < course.studentsAge.size() ; i++) {
             media = media + course.studentsAge.get(i);
         }
@@ -88,4 +91,5 @@ public class Exercises {
         System.out.println("the media age of all student is " + media);
 
     }
+
 }
