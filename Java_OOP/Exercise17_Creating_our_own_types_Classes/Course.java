@@ -1,6 +1,6 @@
 package Java_OOP.Exercise17_Creating_our_own_types_Classes;
 
-import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Course {
@@ -9,6 +9,5 @@ public class Course {
     float qualityRatingOutOf10;
     int courseMonthDuration;
     int courseDailyHours;
-    List<String> studentsName = Arrays.asList("Alice", "Aragon", "Alex");
-    List<Integer> studentsAge = Arrays.asList(23, 31, 38);
+    List<Student> students = new ArrayList(){};
 }

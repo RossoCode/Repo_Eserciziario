@@ -1,5 +1,6 @@
 package Java_OOP.Exercise17_Creating_our_own_types_Classes;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -22,44 +23,43 @@ public class Exercises {
 
     /**
      * 2: use the class called Student, add variables
-     *    (class variables are called 'fields' or 'attributes')
-     *    called 'name' and 'age'
-     *
-     *    Using the function below set the student name and ages
-     *
+     * (class variables are called 'fields' or 'attributes')
+     * called 'name' and 'age'
+     * <p>
+     * Using the function below set the student name and ages
      */
     private static void exercise2() {
         System.out.println("Exercise 2:");
         List<String> studentNames = Arrays.asList("Alice", "Aragon", "Alex");
         List<Integer> studentAges = Arrays.asList(23, 31, 38);
-
         // Use a for i loop
         for (int i = 0; i < studentNames.size(); i++) {
-            System.out.println(studentNames.get(i) + " have " + studentAges.get(i) + " years old");
+            Student student = createNewStudent(studentNames.get(i), studentAges.get(i));
+            System.out.println(student);
         }
-        createNewStudent();
+
     }
 
-    private static Student createNewStudent() {
+    private static Student createNewStudent(String name, Integer age) {
         Student student = new Student();
         // Write your code here
-        student.name = "Lorenzo";
-        student.age = 22;
-        System.out.println(student.name + " have " + student.age + " years old");
+        student.name = name;
+        student.age = age;
+        //System.out.println(student.name + " have " + student.age + " years old");
         return student;
     }
 
     /**
      * 3: Finally lets edit our .Course class once more,
-     *
-     *    This time we are going to add another internal variable (field or attribute) called
-     *    students. It's going to be a List<Student> called students
-     *
-     *    Copy the code above and add the students from exercise 2
-     *
-     *    Bonus: Using an appropriate loop of your choice find the average age of our students.
-     *
-     *    Hint: use a double to stop automatic integer rounding
+     * <p>
+     * This time we are going to add another internal variable (field or attribute) called
+     * students. It's going to be a List<Student> called students
+     * <p>
+     * Copy the code above and add the students from exercise 2
+     * <p>
+     * Bonus: Using an appropriate loop of your choice find the average age of our students.
+     * <p>
+     * Hint: use a double to stop automatic integer rounding
      */
 
     private static void exercise3() {
@@ -72,22 +72,32 @@ public class Exercises {
         course.qualityRatingOutOf10 = 8.2f;
         course.courseMonthDuration = 24;
         course.courseDailyHours = 5;
-        System.out.println("the name of course is " + course.courseName);
-        System.out.println("the numbers of maxStudents is " + course.maxStudents);
-        System.out.println("The rating of the course is " + course.qualityRatingOutOf10);
-        System.out.println("the course duration is " + course.courseMonthDuration + " Month");
-        System.out.println("the daily hours are " + course.courseDailyHours);
+        System.out.println("the name of course is " + course.courseName +
+                           "\nthe numbers of maxStudents is " + course.maxStudents +
+                           "\nThe rating of the course is " + course.qualityRatingOutOf10 +
+                           "\nthe course duration is " + course.courseMonthDuration + " Month" +
+                           "\nthe daily hours are " + course.courseDailyHours);
         System.out.println();
-        for (int i = 0; i <course.studentsName.size() ; i++) {
-            System.out.println("name's course student is " + course.studentsName.get(i)
-                                + " and is age is "+ course.studentsAge.get(i));
+        System.out.println("Students List");
+        List<String> studentNames = Arrays.asList("Alice", "Aragon", "Alex");
+        List<Integer> studentAges = Arrays.asList(23, 31, 38);
+        List<Student> students = Arrays.asList();
+        students.add(studentNames);
+        students.add(studentAges);
+        for (int i = 0; i < studentNames.size(); i++) {
+            Student students = createNewStudent(studentNames.get(i), studentAges.get(i));
+            System.out.println(students);
+//            System.out.println("name's course student is " + studentNames.get(i)
+//                             + " and is age is " + studentAges.get(i));
         }
-        for (int i = 0; i < course.studentsAge.size() ; i++) {
-            media = media + course.studentsAge.get(i);
+        for (int i = 0; i < studentAges.size(); i++) {
+            media = media + studentAges.get(i);
         }
-        media = media / course.studentsAge.size();
+        media = media / studentAges.size();
         System.out.println("the media age of all student is " + media);
 
     }
 
-}
+
+    }
+
