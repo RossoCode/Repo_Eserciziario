@@ -66,9 +66,15 @@ public class Exercises {
     public static void exercise4() {
         System.out.println("\nExercise 4:");
         for (int week = 0; week < 52; week++) {
+            final int year = 2023;
+            int variables_year = 2023;
+                    variables_year ++;
             for (int day = 0; day < 7; day++) {
+                    variables_year ++;
                 for (int hour = 0; hour < 24; hour++) {
+                    variables_year ++;
                     System.out.println("Week " + week +", day " + day +", hour " + hour);
+                    System.out.println("Year: " + year + " variables year " + variables_year);
                 }
             }
         }
