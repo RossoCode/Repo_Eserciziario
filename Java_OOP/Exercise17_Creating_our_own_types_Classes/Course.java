@@ -9,5 +9,9 @@ public class Course {
     float qualityRatingOutOf10;
     int courseMonthDuration;
     int courseDailyHours;
-    List<Student> students = new ArrayList(){};
+    List<Student> students = new ArrayList<>();
+
+    public Course(String name) {
+        this.courseName = name;
+    }
 }

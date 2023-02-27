@@ -65,9 +65,7 @@ public class Exercises {
     private static void exercise3() {
         System.out.println("\nExercise 3:");
         // Write your code here
-        double media = 0;
-        Course course = new Course();
-        course.courseName = "Filosofia";
+        Course course = new Course("Filosofia");
         course.maxStudents = 19;
         course.qualityRatingOutOf10 = 8.2f;
         course.courseMonthDuration = 24;
@@ -81,19 +79,21 @@ public class Exercises {
         System.out.println("Students List");
         List<String> studentNames = Arrays.asList("Alice", "Aragon", "Alex");
         List<Integer> studentAges = Arrays.asList(23, 31, 38);
-        List<Student> students = Arrays.asList();
-        students.add(studentNames);
-        students.add(studentAges);
+        List<Student> students = new ArrayList<>();
+        // Use a for i loop
         for (int i = 0; i < studentNames.size(); i++) {
-            Student students = createNewStudent(studentNames.get(i), studentAges.get(i));
-            System.out.println(students);
-//            System.out.println("name's course student is " + studentNames.get(i)
-//                             + " and is age is " + studentAges.get(i));
+            System.out.println(createNewStudent(studentNames.get(i), studentAges.get(i)));
+            students.add(createNewStudent(studentNames.get(i), studentAges.get(i)));
         }
+        Course programming = new Course("photo");
+        programming.students = students;
+
+        double media = 0;
         for (int i = 0; i < studentAges.size(); i++) {
             media = media + studentAges.get(i);
         }
         media = media / studentAges.size();
+        System.out.println();
         System.out.println("the media age of all student is " + media);
 
     }
