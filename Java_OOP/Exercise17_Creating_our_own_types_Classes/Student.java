@@ -9,11 +9,11 @@ public class Student {
         this.name = name;
         this.age = age;
     } */
-    @Override
+   /* @Override
     public String toString() {
         return "Student{" +
                 "name = '" + name + '\'' +
                 ", age = " + age +
                 '}';
-    }
+    }*/
 }

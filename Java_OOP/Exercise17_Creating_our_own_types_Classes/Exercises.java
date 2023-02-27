@@ -34,8 +34,7 @@ public class Exercises {
         List<Integer> studentAges = Arrays.asList(23, 31, 38);
         // Use a for i loop
         for (int i = 0; i < studentNames.size(); i++) {
-            Student student = createNewStudent(studentNames.get(i), studentAges.get(i));
-            System.out.println(student);
+            createNewStudent(studentNames.get(i), studentAges.get(i));
         }
 
     }
@@ -45,10 +44,9 @@ public class Exercises {
         // Write your code here
         student.name = name;
         student.age = age;
-        //System.out.println(student.name + " have " + student.age + " years old");
+        System.out.println(student.name + " have " + student.age + " years old");
         return student;
     }
-
     /**
      * 3: Finally lets edit our .Course class once more,
      * <p>
@@ -82,7 +80,6 @@ public class Exercises {
         List<Student> students = new ArrayList<>();
         // Use a for i loop
         for (int i = 0; i < studentNames.size(); i++) {
-            System.out.println(createNewStudent(studentNames.get(i), studentAges.get(i)));
             students.add(createNewStudent(studentNames.get(i), studentAges.get(i)));
         }
         Course programming = new Course("photo");

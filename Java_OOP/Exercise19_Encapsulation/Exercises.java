@@ -24,11 +24,6 @@ public class Exercises {
         System.out.println
                 ("Name: " + student.getName() + "\nSex: " + student.getSex() +"\nAge: " + student.getAge() +
                  "\nPlace of birth: " + student.getPlaceOfBirth() + "\nNationality: " + student.getNationality() );
-           /*System.out.println("Name: " + student.getName());
-             System.out.println("Sex: " + student.getSex());
-             System.out.println("Age: " + student.getAge());
-             System.out.println("Place of birth: " + student.getPlaceOfBirth());
-             System.out.println("Nationality: " + student.getNationality());*/
         System.out.println();
         student.setName("Lorenzo");
         student.setSex('M');
