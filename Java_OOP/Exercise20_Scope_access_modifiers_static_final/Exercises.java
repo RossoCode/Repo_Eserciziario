@@ -63,18 +63,19 @@ public class Exercises {
      *    and can be accessed anywhere in this class, but nowhere else.
      *    use SNAKE_CASE naming
      */
-    public static void exercise4() {
+    private static void exercise4() {
+        final int HOUR_IN_A_DAY = 24;
+        int NUM_WEEK = 3 ;
+        int DAY_IN_A_WEEK = 7;
         System.out.println("\nExercise 4:");
-        for (int week = 0; week < 52; week++) {
-            final int year = 2023;
-            int variables_year = 2023;
-                    variables_year ++;
-            for (int day = 0; day < 7; day++) {
-                    variables_year ++;
-                for (int hour = 0; hour < 24; hour++) {
-                    variables_year ++;
+        for (int week = 0; week < NUM_WEEK; week++) {
+
+            for (int day = 0; day < DAY_IN_A_WEEK; day++) {
+
+                for (int hour = 0; hour < HOUR_IN_A_DAY; hour++) {
+
                     System.out.println("Week " + week +", day " + day +", hour " + hour);
-                    System.out.println("Year: " + year + " variables year " + variables_year);
+
                 }
             }
         }

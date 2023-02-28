@@ -14,4 +14,12 @@ public class Course {
     public Course(String name) {
         this.courseName = name;
     }
+    public double average () {
+        double sum = 0;
+        for (int i = 0; i < students.size(); i++) {
+           sum= sum + students.get(i).age;
+        }
+        double average = sum / students.size();
+    return average;
+    }
 }

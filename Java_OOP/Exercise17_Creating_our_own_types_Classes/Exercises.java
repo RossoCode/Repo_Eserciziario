@@ -34,7 +34,8 @@ public class Exercises {
         List<Integer> studentAges = Arrays.asList(23, 31, 38);
         // Use a for i loop
         for (int i = 0; i < studentNames.size(); i++) {
-            createNewStudent(studentNames.get(i), studentAges.get(i));
+            Student student = createNewStudent(studentNames.get(i), studentAges.get(i));
+            System.out.println(student);
         }
 
     }
@@ -44,7 +45,7 @@ public class Exercises {
         // Write your code here
         student.name = name;
         student.age = age;
-        System.out.println(student.name + " have " + student.age + " years old");
+        //System.out.println(student.name + " have " + student.age + " years old");
         return student;
     }
     /**
@@ -81,17 +82,14 @@ public class Exercises {
         // Use a for i loop
         for (int i = 0; i < studentNames.size(); i++) {
             students.add(createNewStudent(studentNames.get(i), studentAges.get(i)));
+            System.out.println(students);
         }
         Course programming = new Course("photo");
         programming.students = students;
 
-        double media = 0;
-        for (int i = 0; i < studentAges.size(); i++) {
-            media = media + studentAges.get(i);
-        }
-        media = media / studentAges.size();
+
         System.out.println();
-        System.out.println("the media age of all student is " + media);
+        System.out.println("the media age of all student is " + programming.average());
 
     }
 
