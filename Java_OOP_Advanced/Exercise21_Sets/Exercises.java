@@ -1,4 +1,4 @@
-package Java_OOP_Advanced;
+package Java_OOP_Advanced.Exercise21_Sets;
 
 import java.util.*;
 
@@ -110,7 +110,14 @@ public class Exercises {
         Set<Integer> setB = Set.of(5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15);
         Set<Integer> itemsContainedInBothSets = new HashSet<>();
         // Your code
+        for (Integer itemA: setA) {
+            for (Integer itemB : setB) {
+                if (itemB.equals(itemA)) {
+                    itemsContainedInBothSets.add(itemB);
+                }
 
+            }
+        }
 
         if (!itemsContainedInBothSets.equals(Set.of(5, 6, 7, 8, 9, 10))) {
             System.out.println("3b. Incorrect number of items in itemsContainedInBothSets");
