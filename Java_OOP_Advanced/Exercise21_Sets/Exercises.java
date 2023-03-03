@@ -110,14 +110,12 @@ public class Exercises {
         Set<Integer> setB = Set.of(5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15);
         Set<Integer> itemsContainedInBothSets = new HashSet<>();
         // Your code
-        for (Integer itemA: setA) {
-            for (Integer itemB : setB) {
-                if (itemB.equals(itemA)) {
-                    itemsContainedInBothSets.add(itemB);
-                }
-
+        for (Integer itemB : setB) {
+            if (setA.contains(itemB)) {
+                itemsContainedInBothSets.add(itemB);
             }
         }
+
 
         if (!itemsContainedInBothSets.equals(Set.of(5, 6, 7, 8, 9, 10))) {
             System.out.println("3b. Incorrect number of items in itemsContainedInBothSets");
@@ -142,6 +140,17 @@ public class Exercises {
             min = Math.min(min,number);
             break;
         }
+    /*  int min = Integer.MAX_VALUE;
+        int oldValue = min;
+        // Your code
+        for (Integer number : orderedNumbers) {
+            if(oldValue <  number) {
+            break;
+            }else {
+            min = Math.min(min, number);
+            oldValue = number;
+            }
+        }*/
         if (min != 1) {
             System.out.println("4a. Incorrect min value");
         } else {

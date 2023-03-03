@@ -3,13 +3,15 @@ package Java_OOP.Exercise20_Scope_access_modifiers_static_final;
 import java.util.Random;
 
 public class Exercises {
+    private static int HOUR_IN_A_DAY = 24;
+    private static int NUM_WEEK = 52 ;
+    private static int DAY_IN_A_WEEK = 7;
     public static void main(String[] args) {
         exercise1();
         exercise2();
         exercise3();
         exercise4();
     }
-
     /**
      * 1: Create variables with the MINIMUM POSSIBLE scope for currentCount and totalCount (both ints)
      */
@@ -63,10 +65,8 @@ public class Exercises {
      *    and can be accessed anywhere in this class, but nowhere else.
      *    use SNAKE_CASE naming
      */
-    private static final int HOUR_IN_A_DAY = 24;
-    private static int NUM_WEEK = 52 ;
-    private static int DAY_IN_A_WEEK = 7;
     private static void exercise4() {
+
         System.out.println("\nExercise 4:");
         for (int week = 0; week < NUM_WEEK; week++) {
 
