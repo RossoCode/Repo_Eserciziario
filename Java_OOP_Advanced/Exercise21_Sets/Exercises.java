@@ -138,8 +138,9 @@ public class Exercises {
         //     you can use `break;` to exit the loop once you've found it!
         int min = Integer.MAX_VALUE;
         // Your code
-        for (Integer number : orderedNumbers) {
+       for (Integer number : orderedNumbers) {
             min = Math.min(min,number);
+            break;
         }
         if (min != 1) {
             System.out.println("4a. Incorrect min value");

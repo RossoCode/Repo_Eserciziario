@@ -63,10 +63,10 @@ public class Exercises {
      *    and can be accessed anywhere in this class, but nowhere else.
      *    use SNAKE_CASE naming
      */
+    private static final int HOUR_IN_A_DAY = 24;
+    private static int NUM_WEEK = 52 ;
+    private static int DAY_IN_A_WEEK = 7;
     private static void exercise4() {
-        final int HOUR_IN_A_DAY = 24;
-        int NUM_WEEK = 3 ;
-        int DAY_IN_A_WEEK = 7;
         System.out.println("\nExercise 4:");
         for (int week = 0; week < NUM_WEEK; week++) {
 
