@@ -61,9 +61,9 @@ public class Exercises {
         }
 
         if (mostExpensiveMenuItemName.equals("Pizza")) {
-            System.out.println("2a. Correct!");
+            System.out.println("2. Correct!");
         } else {
-            System.out.println("2a. Incorrect!");
+            System.out.println("2. Incorrect!");
         }
     }
 
