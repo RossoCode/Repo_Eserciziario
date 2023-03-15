@@ -1,5 +1,6 @@
 package Java_OOP_Advanced.Exercise25_Handling_Exceptions;
 
+import java.io.FileReader;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -21,11 +22,11 @@ public class Exercises {
         System.out.println("Exercise 1: ");
         // Your code here
         try {
-            Files.createFile(Path.of("Java_OOP_Advanced/Exercise25_Handling_Exceptions/Test.txt"));
+            Files.deleteIfExists(Path.of("Test.txt"));
+            Files.createFile(Path.of("Test.txt"));
         }catch (IOException e) {
-            System.out.println("Error");
+            e.printStackTrace();
         }
-
     }
 
     /**
@@ -38,11 +39,13 @@ public class Exercises {
     private static void exercise2() {
         System.out.println("\nExercise 2: ");
         // Your code here
-       /* try {
+        try {
             String userInputFileName = "test-file.txt";
-        }catch (){
-
-        }*/
+            FileReader reader = new FileReader(userInputFileName);
+        }catch (IOException e){
+//            System.out.println("Exception: " + e.getMessage());
+              System.err.println("Exception in exercise2 : " + e.getMessage());
+        }
 
     }
 
@@ -56,8 +59,12 @@ public class Exercises {
     private static void exercise3() {
         System.out.println("\nExercise 3: ");
         // Your code here
+        try {
+            Integer.parseInt("house");
+        }catch (NumberFormatException e){
+            System.out.println("error: " + e.getMessage());
+        }
 
-        Integer.parseInt("house");
     }
 
     /**
@@ -74,11 +81,15 @@ public class Exercises {
         System.out.println("\nExercise 4: ");
         // Your code here
 
-        Double num1 = 10.0;
-        String num2AsString = "0.0";
-        // try{
-        System.out.println(num1/Double.parseDouble(num2AsString));
-        //}
+        int num1 = 10;
+        String num2AsString = "0";
+         try{
+        System.out.println(num1/Integer.parseInt(num2AsString));
+        } catch (NumberFormatException n){
+             System.out.println("error: Formato della Stringa non valido");
+         } catch (ArithmeticException a){
+             System.out.println("error: il numero non può esser diviso per zero");
+         }
         // Your catch blocks here
 
     }
