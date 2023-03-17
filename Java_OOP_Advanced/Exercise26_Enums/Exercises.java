@@ -1,6 +1,6 @@
 package Java_OOP_Advanced.Exercise26_Enums;
 
-import static Java_OOP_Advanced.Exercise26_Enums.Operator.*;
+import static Java_OOP_Advanced.Exercise26_Enums.Exercises.Operator.*;
 
 public class Exercises {
     public static void main(String[] args) {
@@ -126,6 +126,28 @@ public class Exercises {
      * Create an enum called "Operator" with the values "ADD", "SUBTRACT", "MULTIPLY", "DIVIDE".
      * Write a method that takes two integers and an Operator value as input, performs the corresponding operation on the integers, and returns the result.
      */
+    enum Operator {
+        ADD,
+        DIVIDE,
+        MULTIPLY,
+        SUBTRACT;
+        public static double ADD(double num1, double num2) {
+            double result = num1 + num2;
+            return result;
+        }
+        public static double SUBTRACT(double num1, double num2) {
+            double result = num1 - num2;
+            return result;
+        }
+        public static double MULTIPLY(double num1, double num2) {
+            double result = num1 * num2;
+            return result;
+        }
+        public static double DIVIDE(double num1, double num2) {
+            double result = num1 / num2;
+            return result;
+        }
+    }
     private static void exercise5() {
         System.out.println("\nExercise 5: ");
         // Your code here
@@ -133,7 +155,7 @@ public class Exercises {
         double num1 = 5;
         double num2 = 2;
         System.out.println("Add result: " + ADD(num1,num2));
-        System.out.println("Subtract result: " +SUBTRACT(num1, num2));
+        System.out.println("Subtract result: " + Operator.SUBTRACT(num1, num2));
         System.out.println("Multiply result: " + MULTIPLY(num1, num2));
         System.out.println("Divide result: " +DIVIDE(num1, num2));
     }
