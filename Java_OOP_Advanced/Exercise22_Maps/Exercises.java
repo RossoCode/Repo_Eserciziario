@@ -24,7 +24,7 @@ public class Exercises {
         // 1c. Print the map
         System.out.println(myFirstMap);
         // 1d. Access an element in the map with .get
-        myFirstMap.get("Anni di Cristo");
+        System.out.println(myFirstMap.get(33));
         // 1e. Remove an element from the map .remove
         myFirstMap.remove(33);
         // 1f. Print the map again to confirm the element was removed

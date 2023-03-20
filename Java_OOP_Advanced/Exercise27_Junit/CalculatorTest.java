@@ -78,7 +78,7 @@ class CalculatorTest {
         // Your code here
         Calculator calculator = new Calculator();
         //Power Methods
-        Assert.assertEquals(calculator.power(5,2),25);
+        Assert.assertEquals(calculator.power(5,2),25,0.5);
 
     }
 }
