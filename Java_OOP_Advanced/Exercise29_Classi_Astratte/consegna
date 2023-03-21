@@ -1,0 +1,44 @@
+
+Esercizio 1
+Creare una classe astratta chiamata "Forma"
+con campi di altezza e larghezza
+----------------------------------------------------------------
+Creare classi chiamate "Rettangolo" e "Cerchio" che estendono
+la classe GeometricShape e implementano
+il metodo calculateArea().
+----------------------------------------------------------------
+Creare istanze di entrambe e calcolare la loro area.
+----------------------------------------------------------------
+Per calcolare l'area copiate il seguente codice:
+Math.PI * Math.pow((altezza / 2), 2)
+----------------------------------------------------------------
+BONUS: Assicuratevi che i valori di altezza e larghezza
+siano esattamente gli stessi per Circle,
+modificate il costruttore in questo modo
+----------------------------------------------------------------
+
+Esercizio 2
+Creare una classe di interfaccia chiamata "Movable"
+che abbia i seguenti metodi: moveForward, moveBackward
+----------------------------------------------------------------
+Creare classi chiamate "Auto" e "Barca" che implementino
+l'interfaccia "Movable".
+
+Scrivere il codice sottostante che crea istanze delle classi
+"Car" e "Boat" e dimostra l'uso dei metodi dell'interfaccia
+Movable.
+----------------------------------------------------------------
+
+Esercizio 3
+Creare un'interfaccia chiamata "Playable"
+con un metodo astratto chiamato "play()".
+----------------------------------------------------------------
+Creare una classe astratta chiamata "Instrument" che implementi
+l'interfaccia Playable e contenga i campi "name" e "brand".
+----------------------------------------------------------------
+Creare classi chiamate "Chitarra" e "Pianoforte" che estendano
+la classe Instrument e implementino il metodo play().
+----------------------------------------------------------------
+Scrivere il codice sottostante che crea istanze di entrambe
+le classi Guitar e Piano e dimostra l'uso del metodo play().
+
