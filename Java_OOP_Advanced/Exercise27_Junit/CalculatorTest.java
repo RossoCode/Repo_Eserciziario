@@ -78,7 +78,19 @@ class CalculatorTest {
         // Your code here
         Calculator calculator = new Calculator();
         //Power Methods
+        Assert.assertEquals(calculator.power(0,2),0,0.5);
+        Assert.assertEquals(calculator.power(5,1),5,0.5);
+        Assert.assertEquals(calculator.power(-5,1),-5,0.5);
+
+        Assert.assertEquals(calculator.power(5,0),1,0.5);
         Assert.assertEquals(calculator.power(5,2),25,0.5);
+        Assert.assertEquals(calculator.power(15,-1),0.2,0.5);
+
+        Assert.assertEquals(calculator.power(2.5,2),6.25,0.5);
+
+
+
+
 
     }
 }
