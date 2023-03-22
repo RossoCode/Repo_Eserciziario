@@ -1,0 +1,20 @@
+ Esercizio 1
+ Creare una classe chiamata "Persona" con campi per nome,
+ età e indirizzo.
+
+ Sovrascrivere il metodo `toString()` nella classe Persona
+ per visualizzare il nome,l'età e l'indirizzo dell'oggetto
+ in un formato facile da usare.
+
+ Creare istanze della classe Persona e stamparle utilizzando
+ il metodo `toString()` sovrascritto.
+
+ Esercizio 2
+ Sovrascrivere il metodo `hashCode()` della classe Persona
+ per generare un codice hash univoco basato su nome, età e
+ indirizzo dell'oggetto.
+
+ Si può ottenere questo risultato utilizzando String.hashCode()
+ per convertire le stringhe in ints e sommando i campi tra loro
+
+ Creare 2 persone e stampare i loro codici hash
