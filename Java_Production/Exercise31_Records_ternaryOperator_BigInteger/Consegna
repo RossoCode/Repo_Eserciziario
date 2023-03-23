@@ -1,0 +1,35 @@
+Esercizio 1
+Nel metodo main, creare una variabile x come numero casuale
+compreso tra 0 e 100 utilizzando Math.random() * 100;
+
+Usare un operatore ternario per verificare se x è maggiore o uguale a 50.
+Se lo è, stampa "x è maggiore o uguale a 50".
+Se non lo è, stampa "x è minore di 50".
+
+Sperimentate con diversi valori di x e osservate l'output.
+
+Esercizio 2
+Creare un record chiamato "Persona" con i campi per il nome,
+l'età e l'indirizzo.
+
+Aggiungere un metodo toString a Person per stampare
+i dati in un formato diverso.
+
+Stampare il record nella console
+
+Esercizio 3
+
+Nel metodo main, creare una variabile BigInteger con un valore
+grande.
+
+Creare una variabile BigDecimal con un valore grande.
+
+Dividere il BigInteger per 3 con il metodo divide e
+assegnare il risultato a una nuova variabile BigInteger.
+
+Dividere il BigDecimal per Math.PI con il metodo divide
+e assegnare il risultato a una nuova variabile BigDecimal.
+
+Stampare i risultati
+
+Tradotto con www.DeepL.com/Translator (versione gratuita)

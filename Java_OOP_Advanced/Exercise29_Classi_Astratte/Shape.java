@@ -8,6 +8,12 @@ public abstract class Shape {
         this.height = height;
         this.width = width;
     }
+
+    public Shape() {
+
+    }
+
+
     public abstract double calculateArea();
 
     public double getHeight() {

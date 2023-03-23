@@ -21,7 +21,7 @@ public class Exercises {
         // Your code here
         Persona persona = new Persona("Lorenzo", 22 , "Siracusa");
         System.out.println(persona.toString());
-        System.out.println(persona.hashCode());
+
     }
 
     /**
@@ -37,6 +37,8 @@ public class Exercises {
     private static void exercise2() {
         System.out.println("\nExercise 2: ");
         // Your code here
+        Persona persona = new Persona("Lorenzo", 22 , "Siracusa");
+        System.out.println(persona.hashCode());
     }
 
     /**
