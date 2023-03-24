@@ -2,6 +2,7 @@ package Java_Production.Exercise31_Records_ternaryOperator_BigInteger;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
+import java.math.RoundingMode;
 
 public class Exercises {
     public static void main(String[] args) {
@@ -24,7 +25,7 @@ public class Exercises {
         // Your code here
         int x = (int) (Math.random() * 100);
         System.out.println(x);
-        String message = x > 50 ? "x è maggiore o uguale a 50" : "x è minore di 50";
+        String message = x >= 50 ? "x è maggiore o uguale a 50" : "x è minore di 50";
         System.out.println(message);
     }
 
@@ -63,14 +64,14 @@ public class Exercises {
         System.out.println("\nExercise 3: ");
         // Your code here
         BigInteger bigInteger = new BigInteger("30000000000000000");
-        BigDecimal bigDecimal = new BigDecimal("0.00000000000000000000000000000000000000000");
+        BigDecimal bigDecimal = new BigDecimal("151.000000000000001113333355555000000000000000000");
 
         BigInteger bigDivideInteger;
         bigDivideInteger = bigInteger.divide(new BigInteger("3"));
         System.out.println(bigDivideInteger);
 
         BigDecimal bigDecimalPI;
-        bigDecimalPI = bigDecimal.divide(new BigDecimal(Math.PI));
+        bigDecimalPI = bigDecimal.divide(new BigDecimal(Math.PI), RoundingMode.UP);
         System.out.println(bigDecimalPI);
 
     }
