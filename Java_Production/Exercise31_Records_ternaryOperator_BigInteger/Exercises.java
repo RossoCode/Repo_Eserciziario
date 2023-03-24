@@ -63,7 +63,7 @@ public class Exercises {
         System.out.println("\nExercise 3: ");
         // Your code here
         BigInteger bigInteger = new BigInteger("30000000000000000");
-        BigDecimal bigDecimal = new BigDecimal("100.00000000000000000000000000000000000000000");
+        BigDecimal bigDecimal = new BigDecimal("0.00000000000000000000000000000000000000000");
 
         BigInteger bigDivideInteger;
         bigDivideInteger = bigInteger.divide(new BigInteger("3"));
