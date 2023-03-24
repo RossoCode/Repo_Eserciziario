@@ -1,8 +1,8 @@
 package Java_Production.Exercise32_Java_Streams;
 
-import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 public class Exercises {
@@ -29,13 +29,11 @@ public class Exercises {
     private static void exercise1() {
         System.out.println("\nExercise 1: ");
         // Your code here
-         Set<Integer> evenNumbers = new HashSet<Integer>();
-                for(Integer even : ourNumbers){
-                    if (even % 2 == 0){
-                        evenNumbers.add(even);
-                    }
-                    }
-
+        ourNumbers.stream().filter(n -> n % 2 == 0).forEach(System.out::println);
+        /*
+        List<Integer> evenNumbers = ourNumbers.stream().filter(n -> n % 2 == 0).toList();
+        System.out.println(evenNumbers);
+        */
     }
 
 
@@ -56,6 +54,9 @@ public class Exercises {
     private static void exercise2() {
         System.out.println("\nExercise 2: ");
         // Your code here
+        Set<Integer> oddNumbers = ourNumbers.stream().filter(n -> n % 2 != 0).collect(Collectors.toSet());
+        System.out.println(oddNumbers);
+
     }
 
     /**
@@ -74,6 +75,8 @@ public class Exercises {
         System.out.println("\nExercise 3: ");
         List<String> alice = List.of("Alice", "Bob", "Charlie");
         // Your code here
+        Set<String> upperName = alice.stream().map(String::toUpperCase).collect(Collectors.toSet());
+        System.out.println(upperName);
     }
 
     /**
@@ -91,5 +94,7 @@ public class Exercises {
     private static void exercise4() {
         System.out.println("\nExercise 4");
         //Your code here
+        Set<Integer> evenx2Number = ourNumbers.stream().filter(n -> n % 2 == 0).map(n -> n * 2).collect(Collectors.toSet());
+        System.out.println(evenx2Number);
     }
 }
