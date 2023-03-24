@@ -1,6 +1,8 @@
 package Java_Production.Exercise32_Java_Streams;
 
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import java.util.stream.IntStream;
 
 public class Exercises {
@@ -12,7 +14,7 @@ public class Exercises {
         exercise4();
     }
 
-    private List<Integer> ourNumbers = IntStream.range(1, 10).boxed().toList();
+    private static List<Integer> ourNumbers = IntStream.range(1, 10).boxed().toList();
 
     /**
      * 1:
@@ -27,7 +29,19 @@ public class Exercises {
     private static void exercise1() {
         System.out.println("\nExercise 1: ");
         // Your code here
+         Set<Integer> evenNumbers = new HashSet<Integer>();
+                for(Integer even : ourNumbers){
+                    if (even % 2 == 0){
+                        evenNumbers.add(even);
+                    }
+                    }
+
     }
+
+
+
+
+
 
     /**
      * 2:
