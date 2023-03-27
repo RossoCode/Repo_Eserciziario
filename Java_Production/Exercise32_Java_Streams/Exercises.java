@@ -84,11 +84,11 @@ public class Exercises {
      *
      *
      * Use filter to select only even numbers from the list 'ourNumbers'
-     *
+
      * Use map to multiply the even numbers by 2
-     *
+
      * Use the toSet() method to collect the resulting numbers in a Set
-     *
+
      * Print the resulting Set
      */
     private static void exercise4() {
